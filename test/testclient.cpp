@@ -17,7 +17,7 @@ int main() {
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_port = htons(PORT);
 
-    if(inet_pton(AF_INET, "172.18.211.146", &serv_addr.sin_addr) <= 0) {
+    if(inet_pton(AF_INET, "xxx.xx.xxx.xxx", &serv_addr.sin_addr) <= 0) {
         std::cerr << "Invalid address / Address not supported\n";
         return -1;
     }
